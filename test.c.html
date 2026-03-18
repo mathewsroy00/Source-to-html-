@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>sode2html</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:lightgrey;">
+<pre>
+<span class="comment">/* ================================================
+ * Program  : Calculator
+ * Author   : Mathews Roy
+ * ================================================ */</span>
+
+<span class="preprocess_dir">#include </span><span class="header_file">&lt;stdio.h&gt;</span>
+<span class="preprocess_dir">#include </span><span class="header_file">&lt;stdlib.h&gt;</span>
+<span class="preprocess_dir">#include </span><span class="header_file">"calculator.h"</span>
+
+<span class="reserved_key1">int</span> add(<span class="reserved_key1">int</span> a, <span class="reserved_key1">int</span> b)
+{
+    <span class="reserved_key2">return</span> a + b;
+}
+
+<span class="reserved_key1">float</span> multiply(<span class="reserved_key1">float</span> a, <span class="reserved_key1">float</span> b)
+{
+    <span class="reserved_key2">return</span> a * b;
+}
+
+<span class="reserved_key1">int</span> main()
+{
+    <span class="reserved_key1">int</span> choice = <span class="numeric_constant">0</span>;
+    <span class="reserved_key1">float</span> result = <span class="numeric_constant">0.0</span>;
+    <span class="reserved_key1">char</span> operation = <span class="ascii_char">'+'</span>;
+
+    printf(<span class="string">"Welcome to Calculator\n"</span>);
+
+    <span class="comment">/* taking user input */</span>
+    printf(<span class="string">"Enter choice : "</span>);
+    scanf(<span class="string">"%d"</span>, &choice);
+
+    <span class="reserved_key2">if</span>(choice == <span class="numeric_constant">1</span>)
+    {
+        result = add(<span class="numeric_constant">10</span>, <span class="numeric_constant">20</span>);
+        printf(<span class="string">"Result : %f\n"</span>, result);
+    }
+    <span class="reserved_key2">else</span> <span class="reserved_key2">if</span>(choice == <span class="numeric_constant">2</span>)
+    {
+        result = multiply(<span class="numeric_constant">3.14</span>, <span class="numeric_constant">2.0</span>);
+        printf(<span class="string">"Result : %f\n"</span>, result);
+    }
+    <span class="reserved_key2">else</span>
+    {
+        printf(<span class="string">"Invalid choice\n"</span>);
+        <span class="reserved_key2">return</span> <span class="numeric_constant">1</span>;
+    }
+
+    <span class="reserved_key2">return</span> <span class="numeric_constant">0</span>;
+}</pre>
+</body>
+</html>
