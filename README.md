@@ -26,7 +26,3 @@ It reads a C file, parses it into tokens like keywords, comments, strings, and n
 - File Handling in C
 - Tokenization (Lexical Analysis)
 - String Processing
-
----
-
-## 📂 Project Structure
